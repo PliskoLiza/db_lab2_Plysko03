@@ -27,7 +27,8 @@ CREATE TABLE FilmRating
 (
   film_id       char(10)   NOT NULL ,
   platform_id   char(10)   NULL ,
-  rating        NUMERIC        NULL
+  rating_date   date       NULL ,
+  rating        NUMERIC    NULL
 );
 
 
@@ -56,6 +57,10 @@ ALTER TABLE Film ADD PRIMARY KEY (film_id);
 ALTER TABLE Genres ADD PRIMARY KEY (genre_id);
 ALTER TABLE Awards ADD PRIMARY KEY (award_id);
 ALTER TABLE Rating_platforms ADD PRIMARY KEY (platform_id);
+
+ALTER TABLE FilmAwards ADD PRIMARY KEY (film_id, award_id);
+ALTER TABLE FilmGenres ADD PRIMARY KEY (film_id, genre_id);
+ALTER TABLE FilmRating ADD PRIMARY KEY (film_id, platform_id, rating_date);
 
 
 ALTER TABLE FilmGenres ADD CONSTRAINT FK_FilmGenres_Film 
