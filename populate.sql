@@ -84,25 +84,25 @@ VALUES
 (10, 'Oscar', 4);
 
 INSERT INTO 
-FilmRating(film_id, platform_id, rating)
+FilmRating(film_id, platform_id, rating_date, rating)
 VALUES
-(1, 'Metascore', 80.0),
-(1, 'IMDb', 9.3),
-(2, 'Metascore', 100.0),
-(2, 'IMDb', 9.2),
-(3, 'Metascore', 85.0),
-(3, 'IMDb', 9.0),
-(4, 'Metascore', 82.0),
-(4, 'IMDb', 9.0),
-(5, 'Metascore', 96.0),
-(5, 'IMDb', 8.9),
-(6, 'Metascore', 93.0),
-(6, 'IMDb', 8.9),
-(7, 'Metascore', 94.0),
-(7, 'IMDb', 8.9),
-(8, 'Metascore', 94.0),
-(8, 'IMDb', 8.8),
-(9, 'Metascore', 66.0),
-(9, 'IMDb', 8.8),
-(10, 'Metascore', 92.0),
-(10, 'IMDb', 8.8);
+(1, 'Metascore', '05.10.2022', 80.0),
+(1, 'IMDb', '05.10.2022', 9.3),
+(2, 'Metascore', '05.10.2022', 100.0),
+(2, 'IMDb', '05.10.2022', 9.2),
+(3, 'Metascore', '05.10.2022', 85.0),
+(3, 'IMDb', '05.10.2022', 9.0),
+(4, 'Metascore', '05.10.2022', 82.0),
+(4, 'IMDb', '05.10.2022', 9.0),
+(5, 'Metascore', '05.10.2022', 96.0),
+(5, 'IMDb', '05.10.2022', 8.9),
+(6, 'Metascore', '05.10.2022', 93.0),
+(6, 'IMDb', '05.10.2022', 8.9),
+(7, 'Metascore', '05.10.2022', 94.0),
+(7, 'IMDb', '05.10.2022', 8.9),
+(8, 'Metascore', '05.10.2022', 94.0),
+(8, 'IMDb', '05.10.2022', 8.8),
+(9, 'Metascore', '05.10.2022', 66.0),
+(9, 'IMDb', '05.10.2022', 8.8),
+(10, 'Metascore', '05.10.2022', 92.0),
+(10, 'IMDb', '05.10.2022', 8.8);
