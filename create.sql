@@ -1,6 +1,6 @@
 CREATE TABLE Film
 (
-  film_id      char(10)   NOT NULL ,
+  film_id      int        NOT NULL ,
   film_name    text       NOT NULL ,
   release_date date       NULL ,
   runtime      int        NULL ,
@@ -10,14 +10,14 @@ CREATE TABLE Film
 
 CREATE TABLE FilmGenres
 (
-  film_id     char(10)   NOT NULL ,
+  film_id     int        NOT NULL ,
   genre_id    char(10)   NULL 
 );
 
 
 CREATE TABLE FilmAwards
 (
-  film_id     char(10)   NOT NULL ,
+  film_id     int        NOT NULL ,
   award_id    char(10)   NULL ,
   quantity    int        NULL
 );
@@ -25,7 +25,7 @@ CREATE TABLE FilmAwards
 
 CREATE TABLE FilmRating
 (
-  film_id       char(10)   NOT NULL ,
+  film_id       int        NOT NULL ,
   platform_id   char(10)   NULL ,
   rating_date   date       NULL ,
   rating        NUMERIC    NULL
